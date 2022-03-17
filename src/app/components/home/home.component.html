@@ -1,0 +1,38 @@
+<div class="filters">
+  <mat-form-field>
+    <mat-label>Sort</mat-label>
+    <mat-select
+      panelClass="sort-select"
+      [(ngModel)]="sort"
+    >
+      <mat-option value="Name">Name</mat-option>
+      <mat-option value="-released">Released</mat-option>
+      <mat-option value="-added">Added</mat-option>
+      <mat-option value="-created">Created</mat-option>
+      <mat-option value="-updated">Updated</mat-option>
+      <mat-option value="-rating">Rating</mat-option>
+      <mat-option value="metacritic">Metacritic</mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+
+<div class="games">
+  <div class="game">
+    <div class="game-thumb-container">
+      <img
+        src="https://www.10wallpaper.com/wallpaper/medium/2201/Eivor_Assassins_Creed_Valhalla_2022_Game_5K_Poster_medium.jpg"
+        alt="thumbnail"
+        class="game-thumbnail"
+      />
+      <div class="game-description">
+        <p class="game-name">Name</p>
+        <div class="game-platforms">
+          <img
+            src="https://www.10wallpaper.com/wallpaper/medium/2001/Call_of_Duty_2020_Mobile_Game_4K_Poster_medium.jpg"
+            alt="slug"
+            class="game-platform">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
